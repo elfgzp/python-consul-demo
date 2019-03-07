@@ -6,6 +6,8 @@ services:
     image: consul:latest
     networks:
       - consul-demo
+    volumes:
+      - "./consul/acl.json:/consul/config/acl.json"
     command: "agent -retry-join consul-server-bootstrap -client 0.0.0.0"
 
   consul-agent-2:
@@ -16,6 +18,8 @@ services:
 
   consul-server-1: &consul-server
     <<: *consul-agent
+    volumes:
+      - "./consul/acl.json:/consul/config/acl.json"
     command: "agent -server -retry-join consul-server-bootstrap -client 0.0.0.0"
 
   consul-server-2:
@@ -23,6 +27,8 @@ services:
 
   consul-server-bootstrap:
     <<: *consul-agent
+    volumes:
+      - "./consul/acl.json:/consul/config/acl.json"
     ports:
       - "8400:8400"
       - "8500:8500"
