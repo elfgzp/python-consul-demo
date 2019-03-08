@@ -1,40 +1,16 @@
 version: '3'
 
 services:
-
-  consul-agent-1: &consul-agent
+  consul-alone:
     image: consul:latest
     networks:
-      - consul-demo
-    volumes:
-      - "./consul/acl.json:/consul/config/acl.json"
-    command: "agent -retry-join consul-server-bootstrap -client 0.0.0.0"
-
-  consul-agent-2:
-    <<: *consul-agent
-
-  consul-agent-3:
-    <<: *consul-agent
-
-  consul-server-1: &consul-server
-    <<: *consul-agent
-    volumes:
-      - "./consul/acl.json:/consul/config/acl.json"
-    command: "agent -server -retry-join consul-server-bootstrap -client 0.0.0.0"
-
-  consul-server-2:
-    <<: *consul-server
-
-  consul-server-bootstrap:
-    <<: *consul-agent
-    volumes:
-      - "./consul/acl.json:/consul/config/acl.json"
+      - consul-alone-demo
     ports:
       - "8400:8400"
       - "8500:8500"
       - "8600:8600"
       - "8600:8600/udp"
-    command: "agent -server -bootstrap-expect 3 -ui -client 0.0.0.0"
+    command: "agent -dev -ui -client 0.0.0.0"
 
 networks:
-  consul-demo:
+  consul-alone-demo:
