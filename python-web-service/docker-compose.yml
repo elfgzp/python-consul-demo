@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  python-web-service:
+    build: .
+    ports:
+      - "8888:8888"
+    volumes:
+      - "./config.py:/workspace/python-web-service/config.py"
