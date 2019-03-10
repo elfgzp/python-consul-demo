@@ -1,0 +1,4 @@
+# -*- coding: utf-8 -*-
+__author__ = 'gzp'
+
+GREETING = '{{ keyOrDefault "python-web-service/greeting" "Hello World" }}'

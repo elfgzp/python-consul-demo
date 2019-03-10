@@ -8,6 +8,7 @@ verify_ssl = true
 [packages]
 python-consul = "*"
 tornado = "*"
+configparser = "*"
 
 [requires]
 python_version = "3.6"
