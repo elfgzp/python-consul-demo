@@ -347,7 +347,7 @@ $ consul-template -config config.hcl
 
 我们可以访问 Consul Web UI 的 `Key/Value` 来修改我们的值：
 
-![img6](/Users/gzp/Documents/Github/python-consul-demo/docs/assets/images/WX20190311-115350@2x.png)
+![img6](./docs/assets/images/WX20190311-115350@2x.png)
 
 
 
