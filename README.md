@@ -383,8 +383,5 @@ Hello Consul
 >
 > [P2P 网络核心技术：Gossip 协议](https://zhuanlan.zhihu.com/p/41228196)
 >
-<<<<<<< HEAD
 > [服务发现框架选型，Consul 还是 Zookeeper 还是 etcd](https://www.servercoder.com/2018/03/30/consul-vs-zookeeper-etcd/)
-=======
-> [服务发现框架选型，Consul还是Zookeeper还是etcd](https://www.servercoder.com/2018/03/30/consul-vs-zookeeper-etcd/)
->>>>>>> 535cf5c8e94876c97573108c76485e62d6113bce
+
