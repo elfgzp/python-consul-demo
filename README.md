@@ -69,9 +69,9 @@ Gossip 过程是由种子节点发起，当一个种子节点有状态需要更�
 
 | **名称**  | **优点**                                                     | **缺点**                                                     | **接口** | **一致性算法** |
 | --------- | ------------------------------------------------------------ | ------------------------------------------------------------ | -------- | -------------- |
-| zookeeper | 1.功能强大，不仅仅只是服务发现<br />2.提供watcher机制能实时获取服务提供者的状态<br />3.dubbo等框架支持 | 1.没有健康检查<br />2.需在服务中集成sdk，复杂度高<br />3.不支持多数据中心 | sdk      | Paxos          |
-| consul    | 1.简单易用，不需要集成sdk<br />2.自带健康检查<br />3.支持多数据中心<br />4.提供web管理界面 | 1.不能实时获取服务信息的变化通知                             | http/dns | Raft           |
-| etcd      | 1.简单易用，不需要集成sdk<br />2.可配置性强                  | 1.没有健康检查<br />2.需配合第三方工具一起完成服务发现<br />3.不支持多数据中心 | http     | Raft           |
+| zookeeper | 1.功能强大，不仅仅只是服务发现<br />2.提供 watcher 机制能实时获取服务提供者的状态<br />3.dubbo 等框架支持 | 1.没有健康检查<br />2.需在服务中集成 sdk，复杂度高<br />3.不支持多数据中心 | sdk      | Paxos          |
+| consul    | 1.简单易用，不需要集成 sdk<br />2.自带健康检查<br />3.支持多数据中心<br />4.提供 web 管理界面 | 1.不能实时获取服务信息的变化通知                             | http/dns | Raft           |
+| etcd      | 1.简单易用，不需要集成 sdk<br />2.可配置性强                  | 1.没有健康检查<br />2.需配合第三方工具一起完成服务发现<br />3.不支持多数据中心 | http     | Raft           |
 
 
 
@@ -238,8 +238,8 @@ if __name__ == '__main__':
 
 ### 结合 consul-template 用解藕的方式去配置微服务
 
-> Consul Template 提供一个方便的方式从Consul获取数据通过consul-template的后台程序保存到文件系统。  
-> 这个后台进程监控Consul示例的变化并更新任意数量的模板到文件系统.作为一个附件功能,模板更新完成后consul-template可以运行任何命令.可以查看示例部分看这个功能将会对哪些应用场景产生帮助。
+> Consul Template 提供一个方便的方式从 Consul 获取数据通过 consul-template 的后台程序保存到文件系统。  
+> 这个后台进程监控 Consul 示例的变化并更新任意数量的模板到文件系统.作为一个附件功能,模板更新完成后 consul-template 可以运行任何命令.可以查看示例部分看这个功能将会对哪些应用场景产生帮助。
 
 
 
@@ -383,4 +383,4 @@ Hello Consul
 >
 > [P2P 网络核心技术：Gossip 协议](https://zhuanlan.zhihu.com/p/41228196)
 >
-> [服务发现框架选型，Consul还是Zookeeper还是etcd](https://www.servercoder.com/2018/03/30/consul-vs-zookeeper-etcd/)
+> [服务发现框架选型，Consul 还是 Zookeeper 还是 etcd](https://www.servercoder.com/2018/03/30/consul-vs-zookeeper-etcd/)
