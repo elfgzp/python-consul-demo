@@ -4,7 +4,7 @@
 
 README 前半部分主要为 Consul 的一些介绍，若已经了解 Consul，可以直接跳转到：
 
-[使用 Consul 作为 Python 微服务的配置中心](#使用 Consul 作为 Python 微服务的配置中心)
+[使用 Consul 作为 Python 微服务的配置中心](#使用-consul-作为-python-微服务的配置中心)
 
 ## Consul 简单介绍
 
@@ -170,7 +170,7 @@ $ docker-compose -f docker-compose-client.yml up
 $ consul members
 ```
 
-![img5](/Users/gzp/Documents/Github/python-consul-demo/docs/assets/images/WX20190311-112105.png)
+![img5](./docs/assets/images/WX20190311-112105.png)
 
 
 
