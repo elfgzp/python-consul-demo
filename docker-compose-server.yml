@@ -14,7 +14,7 @@ services:
       - "8500:8500"
       - "8600:8600"
       - "8600:8600/udp"
-    command: "agent -server -bootstrap -ui -advertise=$LOCAL_IP -client 0.0.0.0"
+    command: "agent -server -bootstrap -ui -advertise=$CONSUL_SERVER_IP_ADDR -client 0.0.0.0"
 
 networks:
   consul-server-demo:
