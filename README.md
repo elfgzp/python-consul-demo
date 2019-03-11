@@ -4,7 +4,7 @@
 
 README 前半部分主要为 Consul 的一些介绍，若已经了解 Consul，可以直接跳转到：
 
-[使用 Consul 作为 Python 微服务的配置中心](#使用 Consul 作为 Python 微服务的配置中心)
+[使用 Consul 作为 Python 微服务的配置中心](#使用-consul-作为-python-微服务的配置中心)
 
 ## Consul 简单介绍
 
@@ -170,7 +170,7 @@ $ docker-compose -f docker-compose-client.yml up
 $ consul members
 ```
 
-![img5](/Users/gzp/Documents/Github/python-consul-demo/docs/assets/images/WX20190311-112105.png)
+![img5](./docs/assets/images/WX20190311-112105.png)
 
 
 
@@ -347,7 +347,7 @@ $ consul-template -config config.hcl
 
 我们可以访问 Consul Web UI 的 `Key/Value` 来修改我们的值：
 
-![img6](/Users/gzp/Documents/Github/python-consul-demo/docs/assets/images/WX20190311-115350@2x.png)
+![img6](./docs/assets/images/WX20190311-115350@2x.png)
 
 
 
@@ -383,4 +383,8 @@ Hello Consul
 >
 > [P2P 网络核心技术：Gossip 协议](https://zhuanlan.zhihu.com/p/41228196)
 >
+<<<<<<< HEAD
 > [服务发现框架选型，Consul 还是 Zookeeper 还是 etcd](https://www.servercoder.com/2018/03/30/consul-vs-zookeeper-etcd/)
+=======
+> [服务发现框架选型，Consul还是Zookeeper还是etcd](https://www.servercoder.com/2018/03/30/consul-vs-zookeeper-etcd/)
+>>>>>>> 535cf5c8e94876c97573108c76485e62d6113bce
